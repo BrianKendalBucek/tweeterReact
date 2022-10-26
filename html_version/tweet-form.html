@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Information -->
+    <title>Tweeter - Home Page</title>
+    <meta name="description" content="The Web's Noisiest Newsfeed" />
+    <meta name="keywords" content="HTML,CSS,JS,jQuery" />
+    <meta name="author" content="Lighthouse Labs" />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <!-- external font from Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bungee|Source+Sans+Pro:300,400,600"
+      rel="stylesheet"
+    />
+    <!-- font awesome (stretch) -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+
+    <!-- App CSS -->
+    <link rel="stylesheet" href="./original.css" type="text/css" />
+  </head>
+  <body>
+    <section class="newtweet">
+      <form method="post" action="/tweets" class="newtweet__form">
+        <textarea
+          class="form__textarea"
+          name="text"
+          placeholder="What are you humming about?"
+        ></textarea>
+        <input type="submit" value="Tweet" class="form__input" />
+        <span class="form__counter">140</span>
+      </form>
+    </section>
+  </body>
+</html>
